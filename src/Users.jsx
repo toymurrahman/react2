@@ -1,4 +1,7 @@
+import './Users.css'
 import { useEffect, useState } from "react";
+
+
 
 export default function Users() {
 
@@ -11,7 +14,7 @@ export default function Users() {
     }, [])
 
   return (
-    <div>
+    <div className="style">
       <h3>Users: {users.length} </h3>
      {
         users.map((user) => (
